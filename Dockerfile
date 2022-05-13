@@ -7,7 +7,7 @@ COPY ./requirements.txt /app/requirements.txt
 
 WORKDIR /app
 
-RUN ls -l /usr/src/app PYTHONPATH=/usr/bin/python pip install -r requirements.txt
+RUN PYTHONPATH=/usr/bin/app pip install -r requirements.txt
 
 # RUN PYTHONPATH=/usr/bin/python pip install -r requirements.txt
 
