@@ -9,7 +9,7 @@ WORKDIR /app
 
 RUN ls -l /usr/src/app PYTHONPATH=/usr/bin/python pip install -r requirements.txt
 
-# RUN ls -l /usr/src/app PYTHONPATH=/usr/bin/python pip install -r requirements.txt
+# RUN PYTHONPATH=/usr/bin/python pip install -r requirements.txt
 
 COPY . /app
 
